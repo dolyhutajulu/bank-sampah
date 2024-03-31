@@ -1,0 +1,156 @@
+body {
+    background-color: #800000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    display: inline;
+}
+
+#home {
+    padding: 130px;
+    text-align: center;
+    background-image: url("image/bg.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+
+nav {
+    background-color: #0c0606;
+    top: 0;
+    position: sticky;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #DA1F28;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+    display: inline;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    background-color: rgb(45, 43, 43);
+}
+
+main {
+    color: #fff;
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+.content {
+    float: left;
+    width: 70%;
+}
+
+article {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+#achievements .card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #achievements .card header {
+    padding: 15px;
+  }
+  
+  #achievements .club-image {
+    width: 100%;
+    max-height: 150px; /* Sesuaikan dengan kebutuhan */
+    object-fit: cover;
+  }
+  
+  #achievements dl {
+    margin: 10px;
+  }
+  
+  #achievements dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #achievements dd {
+    margin-bottom: 10px;
+  }
+  
+  #achievements .card h2 {
+    text-align: center;
+  }
+  
+  #achievements .card p {
+    text-align: justify;
+    margin: 10px;
+  }
+
+.image {
+    width: 70%;
+    max-height: 350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+footer {
+    background-color: #DA291C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article,
+    aside {
+        flex: 1;
+        margin-right: 0;
+    }
+}
